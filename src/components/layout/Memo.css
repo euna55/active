@@ -1,0 +1,36 @@
+.memo {
+  background:
+    repeating-linear-gradient(0deg, transparent 0 14px, rgba(120,90,50,.12) 14px 15px),
+    var(--cream);
+  border: 1px solid var(--sepia);
+  border-left: 4px solid var(--red);
+  padding: 10px 12px;
+  margin: 8px 0;
+  transform: rotate(-0.6deg);
+  box-shadow: 2px 3px 6px rgba(0,0,0,.2);
+}
+
+.memo__label {
+  font-family: var(--font-body);
+  font-size: 8px;
+  color: var(--red-deep);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.memo__text {
+  font-family: var(--font-hand);
+  font-size: 14px;
+  line-height: 1.7;
+  color: #2a2015;
+}
+
+.memo__task {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--sepia);
+  margin-top: 6px;
+  border-top: 1px solid rgba(90,70,40,.2);
+  padding-top: 6px;
+}

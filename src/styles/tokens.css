@@ -1,0 +1,13 @@
+:root {
+  --paper:    #e9ddc3;
+  --paper2:   #ded0b0;
+  --ink:      #241f18;
+  --red:      #a12b24;
+  --red-deep: #7d1f1a;
+  --sepia:    #5c4a2e;
+  --line:     #3a2f20;
+  --cream:    #f3ead3;
+
+  --font-body: 'Nanum Myeongjo', serif;
+  --font-hand: 'Gaegu', cursive;
+}

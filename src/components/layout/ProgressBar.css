@@ -1,0 +1,20 @@
+.progress-bar {
+  display: flex;
+  gap: 3px;
+  justify-content: center;
+  margin: 8px 0;
+  flex-wrap: nowrap;
+}
+
+.progress-bar__piece {
+  width: 14px;
+  height: 18px;
+  border: 1px solid var(--line);
+  background: var(--paper2);
+  border-radius: 2px;
+}
+
+.progress-bar__piece--on {
+  background: var(--red);
+  border-color: var(--red-deep);
+}

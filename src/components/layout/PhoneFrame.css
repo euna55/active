@@ -1,0 +1,29 @@
+.phone-frame {
+  width: 100%;
+  max-width: 430px;
+  height: 100dvh;
+  margin: 0 auto;
+  background: var(--paper);
+  background-image:
+    radial-gradient(circle at 20% 15%, rgba(140,110,60,.18), transparent 40%),
+    radial-gradient(circle at 80% 80%, rgba(90,70,40,.20), transparent 45%),
+    repeating-linear-gradient(0deg, rgba(90,70,40,.035) 0 2px, transparent 2px 4px);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+}
+
+.phone-scroll {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 20px 16px 24px;
+  display: flex;
+  flex-direction: column;
+  -webkit-overflow-scrolling: touch;
+}
+
+.phone-scroll::-webkit-scrollbar {
+  width: 0;
+}

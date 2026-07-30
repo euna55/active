@@ -1,0 +1,38 @@
+.masthead {
+  border-top: 3px double var(--line);
+  border-bottom: 3px double var(--line);
+  padding: 6px 4px;
+  margin-bottom: 8px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  flex-shrink: 0;
+}
+
+.masthead__title {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 18px;
+  letter-spacing: 2px;
+  color: var(--ink);
+}
+
+.masthead__date-col {
+  position: absolute;
+  font-family: var(--font-body);
+  font-size: 8px;
+  color: var(--red-deep);
+  font-weight: 700;
+  letter-spacing: 1px;
+  writing-mode: vertical-rl;
+}
+
+.masthead__date-col--left { left: 2px; }
+.masthead__date-col--right { right: 2px; }
+
+.masthead__flag {
+  width: 20px;
+  height: 14px;
+}

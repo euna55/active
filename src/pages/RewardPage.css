@@ -1,0 +1,32 @@
+.reward__acquired {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 18px;
+  color: var(--red);
+  text-align: center;
+  letter-spacing: 3px;
+  margin: 16px 0 4px;
+}
+
+.reward__count {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.reward__btn {
+  width: 100%;
+  background: var(--red);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+  margin-top: auto;
+}

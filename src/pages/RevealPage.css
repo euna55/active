@@ -1,0 +1,101 @@
+.reveal__kicker {
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--sepia);
+  text-align: center;
+  letter-spacing: 3px;
+  margin-bottom: 4px;
+}
+
+.reveal__poem-title {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 18px;
+  text-align: center;
+  color: var(--red);
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+
+.reveal__poem {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-left: 3px solid var(--red);
+  padding: 10px 14px;
+  margin-bottom: 12px;
+}
+
+.reveal__poem-line {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #2a2015;
+  line-height: 2;
+}
+
+.reveal__rule {
+  border: 0;
+  border-top: 2px double var(--line);
+  margin: 10px 0;
+  opacity: 0.6;
+}
+
+.reveal__question {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.reveal__name {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 36px;
+  color: var(--red);
+  text-align: center;
+  letter-spacing: 6px;
+  margin-bottom: 4px;
+}
+
+.reveal__info {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.reveal__text {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: #302a20;
+  line-height: 1.8;
+  text-align: center;
+  white-space: pre-line;
+  margin-bottom: 4px;
+}
+
+.reveal__liberation {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 14px;
+  color: var(--ink);
+  text-align: center;
+  line-height: 1.8;
+  letter-spacing: 1px;
+}
+
+.reveal__btn {
+  width: 100%;
+  background: var(--red);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 14px;
+  text-align: center;
+  letter-spacing: 1px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+  margin-top: auto;
+}

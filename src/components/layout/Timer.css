@@ -1,0 +1,15 @@
+.timer {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 16px;
+  color: var(--red);
+  text-align: center;
+  letter-spacing: 2px;
+  border: 2px solid var(--red);
+  border-radius: 4px;
+  padding: 3px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}

@@ -1,0 +1,22 @@
+.fragment {
+  background: var(--cream);
+  border: 2px dashed var(--red);
+  padding: 14px 12px;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.fragment__label {
+  font-size: 8px;
+  color: var(--sepia);
+  letter-spacing: 2px;
+  margin-bottom: 6px;
+}
+
+.fragment__text {
+  font-family: var(--font-body);
+  font-weight: 800;
+  font-size: 17px;
+  color: var(--red);
+  line-height: 1.4;
+}

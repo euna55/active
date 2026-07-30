@@ -1,0 +1,154 @@
+.flag-assemble__prompt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 12px;
+  line-height: 1.6;
+}
+
+.flag-assemble__flag {
+  position: relative;
+  width: 180px;
+  height: 120px;
+  margin: 0 auto 12px;
+  border: 2px solid var(--line);
+  background: var(--cream);
+}
+
+.flag-assemble__taeguk {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90px;
+  height: 60px;
+}
+
+.flag-assemble__corner {
+  position: absolute;
+  width: 48px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: transparent;
+  border: 1.5px dashed var(--line);
+  border-radius: 2px;
+  font-family: var(--font-body);
+  font-size: 9px;
+  color: var(--sepia);
+  padding: 2px;
+}
+
+.flag-assemble__corner--topLeft    { top: 4px; left: 4px; }
+.flag-assemble__corner--topRight   { top: 4px; right: 4px; }
+.flag-assemble__corner--bottomLeft { bottom: 4px; left: 4px; }
+.flag-assemble__corner--bottomRight{ bottom: 4px; right: 4px; }
+
+.flag-assemble__corner--active {
+  border-color: var(--red);
+  border-style: solid;
+}
+
+.flag-assemble__trigram {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
+}
+
+.flag-assemble__line {
+  width: 28px;
+  height: 4px;
+  background: var(--ink);
+  border-radius: 1px;
+}
+
+.flag-assemble__line--broken {
+  background: transparent;
+  border-top: 4px solid var(--ink);
+  width: 28px;
+  position: relative;
+}
+
+.flag-assemble__line--broken::after {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 4px;
+  background: var(--cream);
+}
+
+.flag-assemble__empty {
+  font-size: 16px;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.flag-assemble__pos-label {
+  font-size: 8px;
+}
+
+.flag-assemble__picker {
+  background: var(--cream);
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.flag-assemble__pick-label {
+  font-family: var(--font-body);
+  font-size: 11px;
+  color: var(--sepia);
+  margin-bottom: 8px;
+  text-align: center;
+}
+
+.flag-assemble__options {
+  display: flex;
+  gap: 8px;
+  justify-content: center;
+}
+
+.flag-assemble__option {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  border: 1.5px solid var(--line);
+  border-radius: 4px;
+  background: var(--paper);
+  padding: 6px 8px;
+  font-family: var(--font-body);
+  font-size: 10px;
+  color: var(--sepia);
+}
+
+.flag-assemble__wrong {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--red);
+  text-align: center;
+  margin-bottom: 8px;
+}
+
+.flag-assemble__submit {
+  width: 100%;
+  background: var(--red);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  padding: 12px;
+  border-radius: 3px;
+  box-shadow: 2px 2px 0 rgba(0,0,0,.3);
+}
+
+.flag-assemble__submit:disabled { opacity: 0.5; }

@@ -1,0 +1,47 @@
+@import './styles/tokens.css';
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body, #root {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: #453b33;
+  overflow: hidden;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-body);
+  border: none;
+  background: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+@media (orientation: landscape) and (max-height: 500px) {
+  body::before {
+    content: '화면을 세로로 돌려주세요';
+    position: fixed;
+    inset: 0;
+    background: #241f18;
+    color: #f3ead3;
+    font-family: var(--font-body);
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+}

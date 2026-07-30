@@ -1,0 +1,49 @@
+.cop-gauge {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 9px;
+  color: var(--sepia);
+  font-family: var(--font-body);
+  margin-bottom: 6px;
+}
+
+.cop-gauge__label {
+  white-space: nowrap;
+  font-size: 9px;
+}
+
+.cop-gauge__track {
+  flex: 1;
+  height: 8px;
+  background: var(--paper2);
+  border: 1px solid var(--line);
+  position: relative;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.cop-gauge__fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(45deg, var(--red) 0 4px, var(--red-deep) 4px 8px);
+  transition: width 1s linear;
+}
+
+.cop-gauge__icon {
+  font-size: 14px;
+  line-height: 1;
+}
+
+.cop-gauge--warning .cop-gauge__label {
+  color: var(--red);
+  font-weight: 700;
+  animation: blink 0.8s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
