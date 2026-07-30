@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# 테스트 아티팩트
+pw_test.cjs
+screenshots/
