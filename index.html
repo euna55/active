@@ -14,6 +14,17 @@
       href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Gaegu:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <script>
+      // GitHub Pages SPA 라우팅 복원
+      (function() {
+        var p = window.location.search.match(/[?&]p=([^&]+)/);
+        if (p) {
+          window.history.replaceState(null, null,
+            '/' + decodeURIComponent(p[1]).replace(/&/, '?') + window.location.hash
+          );
+        }
+      })();
+    </script>
   </head>
   <body>
     <div id="root"></div>
