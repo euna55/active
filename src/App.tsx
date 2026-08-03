@@ -9,9 +9,11 @@ import FinalPuzzlePage from './pages/FinalPuzzlePage';
 import RevealPage from './pages/RevealPage';
 import GoodsPage from './pages/GoodsPage';
 
+const basename = import.meta.env.BASE_URL.replace(/\/$/, '');
+
 export default function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={basename}>
       <Routes>
         <Route path="/" element={<CoverPage />} />
         <Route path="/select" element={<SelectHelperPage />} />
