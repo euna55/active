@@ -27,7 +27,7 @@ const spots: Spot[] = [
   {
     id: 1,
     qrToken: 'spot1-abc',
-    photo: '/assets/spots/spot1.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot1.jpg`,
     findHint: '저 멀리 커다란 아치형 돌문이 보인다. 나라를 되찾겠다는 의지로 세운 문—그 앞에 서 있어.',
     arriveText: '도착했어! 이 돌문에는 숫자 비밀이 숨어 있어. 기단 어딘가에 새겨진 연도를 찾아봐.',
     radioLine: '첫 번째 거점이야. 저 돌문을 자세히 살펴봐. 건립 연도 숫자가 있을 거야.',
@@ -46,7 +46,7 @@ const spots: Spot[] = [
   {
     id: 2,
     qrToken: 'spot2-def',
-    photo: '/assets/spots/spot2.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot2.jpg`,
     findHint: '돌로 된 인물 동상이 높은 받침대 위에 서 있어. 아래 기단에 한자가 새겨져 있어.',
     arriveText: '이 분이 만든 신문 이름을 글자 조각으로 맞춰봐.',
     radioLine: '동상 기단 명문을 잘 봐. 그 분이 만든 신문 이름 네 글자가 있어.',
@@ -65,7 +65,7 @@ const spots: Spot[] = [
   {
     id: 3,
     qrToken: 'spot3-ghi',
-    photo: '/assets/spots/spot3.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot3.jpg`,
     findHint: '기와지붕에 단청이 칠해진 건물이야. 처마 아래 색깔 패턴을 찾아봐.',
     arriveText: '단청 색깔 규칙을 찾아라. 빠진 색이 뭔지 맞히면 다음 조각을 얻어.',
     radioLine: '단청 무늬 색 패턴을 살펴봐. 빠진 색을 찾아야 해.',
@@ -84,7 +84,7 @@ const spots: Spot[] = [
   {
     id: 4,
     qrToken: 'spot4-jkl',
-    photo: '/assets/spots/spot4.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot4.jpg`,
     findHint: '높은 탑이 서 있는 광장이야. 탑 아래에 숫자가 새겨진 비문이 있어.',
     arriveText: '탑 비문에서 날짜 숫자를 찾아봐. 자물쇠를 열어야 해.',
     radioLine: '이 탑은 3·1운동을 기념해. 기념탑에 새겨진 날짜를 그대로 입력해.',
@@ -103,7 +103,7 @@ const spots: Spot[] = [
   {
     id: 5,
     qrToken: 'spot5-mno',
-    photo: '/assets/spots/spot5.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot5.jpg`,
     findHint: '한 손을 높이 든 여성 독립운동가 동상이야. 받침대에 이름이 새겨져 있어.',
     arriveText: '이 분이 들고 있는 태극기 조각을 올바르게 맞춰봐.',
     radioLine: '태극기를 완성해야 해. 조각 위치를 잘 맞춰봐.',
@@ -121,7 +121,7 @@ const spots: Spot[] = [
   {
     id: 6,
     qrToken: 'spot6-pqr',
-    photo: '/assets/spots/spot6.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot6.jpg`,
     findHint: '높고 날카롭게 솟은 기념탑이야. 탑 꼭대기를 향해 서 보면 방향이 보여.',
     arriveText: '탑 앞에 서서 나침반으로 방향을 찾아봐. 옛 형무소가 있던 방향은?',
     radioLine: '이 탑에서 옛 서대문형무소 방향을 찾아야 해. 나침반 방향으로 힌트가 숨어 있어.',
@@ -139,7 +139,7 @@ const spots: Spot[] = [
   {
     id: 7,
     qrToken: 'spot7-stu',
-    photo: '/assets/spots/spot7.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot7.jpg`,
     findHint: '땅 아래 옛 감옥 흔적이 발굴된 곳이야. 안내판이 있어.',
     arriveText: '안내판에 그려진 도형 블록으로 옛 감옥 입구 모양을 맞춰봐.',
     radioLine: '발굴지 안내판을 봐. 옛 입구의 모양을 블록으로 맞춰야 해.',
@@ -157,7 +157,7 @@ const spots: Spot[] = [
   {
     id: 8,
     qrToken: 'spot8-vwx',
-    photo: '/assets/spots/spot8.jpg',
+    photo: `${import.meta.env.BASE_URL}assets/spots/spot8.jpg`,
     findHint: '서대문형무소역사관 입구야. 담벼락 어딘가에 숨겨진 표식을 찾아봐.',
     arriveText: '입구 담벼락에서 작은 표식을 찾아 탭해봐. 그곳에 마지막 조각이 숨어 있어.',
     radioLine: '마지막이야. 담벼락 어딘가에 숨겨진 표식을 찾아봐. 잘 살펴봐!',
