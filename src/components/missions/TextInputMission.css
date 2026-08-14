@@ -1,0 +1,42 @@
+.text-input-mission__prompt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.text-input-mission__row {
+  display: flex;
+  gap: 8px;
+}
+
+.text-input-mission__field {
+  flex: 1;
+  border: 2px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  padding: 12px 14px;
+  color: var(--ink);
+}
+
+.text-input-mission__submit {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 18px;
+  border-radius: 4px;
+}
+
+.text-input-mission__wrong {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 10px;
+  text-align: center;
+}

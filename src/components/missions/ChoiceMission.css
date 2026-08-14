@@ -1,0 +1,45 @@
+.choice-mission__prompt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 14px;
+  line-height: 1.6;
+  white-space: pre-line;
+}
+
+.choice-mission__options {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.choice-mission__option {
+  border: 2px solid var(--line);
+  background: var(--cream);
+  padding: 13px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--ink);
+  text-align: left;
+}
+
+.choice-mission__option--wrong {
+  border-color: var(--red);
+  animation: choice-shake 0.3s ease;
+}
+
+@keyframes choice-shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-4px); }
+  75% { transform: translateX(4px); }
+}
+
+.choice-mission__wrong {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 10px;
+  text-align: center;
+}

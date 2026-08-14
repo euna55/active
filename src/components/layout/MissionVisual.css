@@ -1,0 +1,93 @@
+.mission-visual__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 18px;
+  background: var(--paper2);
+  border-radius: 8px;
+  padding: 12px;
+}
+
+.mission-visual__grid-cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.mission-visual__emblem {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid var(--red);
+}
+
+.mission-visual__note {
+  background: var(--paper2);
+  border-radius: 8px;
+  padding: 20px 10px;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+.mission-visual__note-line {
+  margin: 0 0 12px;
+  font-size: 22px;
+  letter-spacing: 0.2em;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.mission-visual__note-line:last-child {
+  margin-bottom: 0;
+}
+
+.mission-visual__equations {
+  background: var(--paper2);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mission-visual__equation-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-family: var(--font-body);
+  font-size: 13.5px;
+  color: var(--ink);
+}
+
+.mission-visual__swatch {
+  width: 22px;
+  height: 22px;
+  flex: none;
+}
+
+.mission-visual__swatch--circle {
+  border-radius: 50%;
+}
+
+.mission-visual__swatch--square {
+  border-radius: 3px;
+}
+
+.mission-visual__image-wrap {
+  width: 100%;
+  margin-bottom: 16px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.mission-visual__image {
+  width: 100%;
+  display: block;
+}

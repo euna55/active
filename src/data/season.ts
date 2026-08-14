@@ -8,6 +8,9 @@ export interface Season {
     revealText: string;
   };
   poemLines: string[];
+  fragmentOrder: string[];
+  guessClues: string[];
+  guessOptions: string[];
 }
 
 const season: Season = {
@@ -30,6 +33,26 @@ const season: Season = {
     '두개골은 깨어져 산산조각이 나도',
     '기뻐서 죽사오매 오히려 무슨 한이 남으오리까',
   ],
+  // 8개 스팟에서 모으는 조각(짧은 구절)을 시 낭독 순서대로 나열한 값.
+  // spots.ts의 각 spot.fragment와 정확히 일치해야 함 (FinalPuzzlePage 정답 판정용).
+  fragmentOrder: [
+    '그날이 오면',
+    '삼각산이',
+    '더덩실 춤이라도 추고',
+    '한강물이',
+    '용솟음칠',
+    '이 목숨이 끊기기 전에',
+    '두개골은 깨어져 산산조각이 나도',
+    '기뻐서 죽사오매',
+  ],
+  guessClues: [
+    '열아홉 살에 이 문 근처에서 붙잡힘 (스팟 1)',
+    '총 대신 펜(신문)을 들었음 (스팟 2)',
+    '"늘 푸른 나무" 이야기를 씀 (스팟 3)',
+    '그 봄, 학생 신분으로 만세 운동에 뛰어들었다가 붙잡힘 (스팟 4)',
+    '저 담장 너머(서대문형무소)에 갇혔던 적이 있음 (스팟 7)',
+  ],
+  guessOptions: ['심훈', '이육사', '윤동주'],
 };
 
 export default season;

@@ -1,0 +1,84 @@
+.char-find__prompt {
+  font-family: var(--font-body);
+  font-size: 13px;
+  color: var(--sepia);
+  text-align: center;
+  margin-bottom: 14px;
+  line-height: 1.6;
+}
+
+.char-find__grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 4px;
+  background: var(--paper2);
+  border-radius: 8px;
+  padding: 16px 6px;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+.char-find__cell {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.char-find__char {
+  font-size: 22px;
+  color: var(--ink);
+  font-family: var(--font-body);
+}
+
+.char-find__order {
+  font-size: 13px;
+  font-weight: 800;
+  color: var(--red);
+  font-family: var(--font-body);
+}
+
+.char-find__camera {
+  width: 100%;
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-size: 13px;
+  padding: 11px;
+  border-radius: 4px;
+  margin-bottom: 16px;
+}
+
+.char-find__row {
+  display: flex;
+  gap: 8px;
+}
+
+.char-find__field {
+  flex: 1;
+  border: 2px solid var(--line);
+  border-radius: 4px;
+  background: #fff;
+  font-family: var(--font-body);
+  font-size: 16px;
+  padding: 12px 14px;
+  color: var(--ink);
+}
+
+.char-find__submit {
+  background: var(--ink);
+  color: var(--cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 12px 18px;
+  border-radius: 4px;
+}
+
+.char-find__wrong {
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--red);
+  margin-top: 10px;
+  text-align: center;
+}
