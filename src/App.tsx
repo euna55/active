@@ -6,6 +6,7 @@ import MemoPage from './pages/MemoPage';
 import MissionPage from './pages/MissionPage';
 import RewardPage from './pages/RewardPage';
 import FinalPuzzlePage from './pages/FinalPuzzlePage';
+import GuessPage from './pages/GuessPage';
 import RevealPage from './pages/RevealPage';
 import GoodsPage from './pages/GoodsPage';
 
@@ -22,6 +23,7 @@ export default function App() {
         <Route path="/mission/:id" element={<MissionPage />} />
         <Route path="/mission/:id/reward" element={<RewardPage />} />
         <Route path="/final" element={<FinalPuzzlePage />} />
+        <Route path="/guess" element={<GuessPage />} />
         <Route path="/reveal" element={<RevealPage />} />
         <Route path="/reveal/reward" element={<GoodsPage />} />
         <Route path="*" element={<Navigate to="/" replace />} />

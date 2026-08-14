@@ -18,7 +18,7 @@ export default function FinalPuzzlePage() {
   const [dragFrom, setDragFrom] = useState<number | null>(null);
   const [wrong, setWrong] = useState(false);
 
-  const correctOrder = season.poemLines;
+  const correctOrder = season.fragmentOrder;
 
   const reorder = (from: number, to: number) => {
     const next = [...order];
@@ -33,7 +33,7 @@ export default function FinalPuzzlePage() {
     const correct = correctOrder.every((line, i) => line === arranged[i]);
     if (correct) {
       finish();
-      navigate('/reveal');
+      navigate('/guess');
     } else {
       setWrong(true);
     }

@@ -5,7 +5,7 @@ import Fragment from '../components/layout/Fragment';
 import RadioBubble from '../components/layout/RadioBubble';
 import ProgressBar from '../components/layout/ProgressBar';
 import { useGameStore } from '../store/gameStore';
-import { helpers, helperLines } from '../data/helpers';
+import { helpers } from '../data/helpers';
 import spots from '../data/spots';
 import './RewardPage.css';
 
@@ -21,8 +21,6 @@ export default function RewardPage() {
   if (!spot) return <div>스팟을 찾을 수 없습니다.</div>;
 
   const helper = helpers.find((h) => h.id === helperId) ?? helpers[3];
-  const override = helperId ? helperLines[helperId]?.[spotId] : undefined;
-  const nextText = override?.next ?? spot.nextHint;
 
   const handleNext = () => {
     if (spotId >= 8) {
@@ -44,9 +42,7 @@ export default function RewardPage() {
         {collectedFragments.length} / 8 조각 수집
       </p>
 
-      {spotId < 8 && (
-        <RadioBubble avatarSrc={helper.avatar} name={helper.name} text={nextText} />
-      )}
+      <RadioBubble avatarSrc={helper.avatar} name={helper.name} text={spot.solveExplain} />
 
       <button className="reward__btn" onClick={handleNext}>
         {spotId >= 8 ? '모든 조각을 모았다!' : '다음 거점으로'}
